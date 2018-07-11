@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Calculator using Vue</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+          {{message}}
+      </div>
+    <div class="buttons" >
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 1)">1</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 2)">2</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 3)">3</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('sign','plus')">+</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 4)">4</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 5)">5</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 6)">6</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('sign', 'minus')">-</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('number', 7)">7</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('number', 8)">8</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('number', 9)">9</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('sign', 'multiply')">x</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('sign', 'clear')">c</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('number', 0)">0</button>
+    <button type="button" name="button" class="btn" v-on:click="calculateAndDisplay('sign', 'equal')">=</button>
+    <button type="button" name="button" class="btn"  v-on:click="calculateAndDisplay('sign', 'divide')">/</button>
+  </div>
+</div>
+
+
+<script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
